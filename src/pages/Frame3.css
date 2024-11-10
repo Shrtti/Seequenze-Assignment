@@ -1,0 +1,72 @@
+/* Frame3.css */
+
+/* Main container styling */
+.frame-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    max-width: 100%;
+    margin: 0 auto;
+    background-color: #f8f9fa; /* Light background color */
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Header styling */
+  .frame-header {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 16px;
+    color: #333; /* Darker text color for readability */
+  }
+  
+  /* Grid container for content (if using a grid layout) */
+  .frame-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 10px;
+    width: 100%;
+  }
+  
+  /* Individual items within the grid */
+  .frame-item {
+    background-color: #ffffff;
+    padding: 16px;
+    border-radius: 8px;
+    text-align: center;
+    color: #333;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Button styling */
+  .frame-button {
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .frame-button:hover {
+    background-color: #0056b3; /* Darken color on hover */
+  }
+  
+  /* Responsive styling */
+  @media (max-width: 768px) {
+    .frame-container {
+      padding: 10px;
+    }
+  
+    .frame-header {
+      font-size: 20px;
+    }
+  
+    .frame-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  

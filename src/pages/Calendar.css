@@ -1,0 +1,75 @@
+/* Container styling */
+.calendar-container {
+  width: 300px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+/* Header styling */
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.nav-button {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.month-year {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Days and dates grid */
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+  text-align: center;
+}
+
+/* Weekday headers */
+.calendar-day-header {
+  font-weight: bold;
+  color: #333333;
+  opacity: 0.6;
+}
+
+/* Date cells */
+.calendar-date {
+  padding: 10px;
+  color: #333333;
+  border-radius: 50%;
+}
+
+.calendar-date:hover {
+  background-color: #f0f0f0;
+  cursor: pointer;
+}
+
+/* Active date styling */
+.active-date {
+  background-color: black;
+  color: white;
+}
+
+/* Style for empty dates */
+.calendar-date:empty {
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.previous-month-date {
+  color: #ccc; /* Grey color */
+  pointer-events: none; /* Make them unselectable */
+  cursor: default;
+}
